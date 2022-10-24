@@ -24,10 +24,7 @@
       property="og:url"
       content="https://mibitelonline.com/solicitud-de-servicio/"
     />
-    <meta
-      property="og:site_name"
-      content="Mi Bitel Delivery"
-    />
+    <meta property="og:site_name" content="Mi Bitel Delivery" />
     <meta
       property="article:modified_time"
       content="2022-05-12T19:40:01+00:00"
@@ -2754,7 +2751,7 @@
                         height="100"
                         src="./public/img/logo.jfif"
                         class="elementor-animation-shrink attachment-full size-full astra-logo-svg"
-                        alt="MiBitelOnline.com | Distribuidor Online - Ubitecno | Logo Verde"
+                        alt="biteldelivery.com | Distribuidor Online"
                         loading="lazy"
                       />
                     </a>
@@ -2823,8 +2820,7 @@
                   data-widget_type="nav-menu.default"
                 >
                   <div class="elementor-widget-container">
-                    
-					<nav
+                    <nav
                       migration_allowed="1"
                       migrated="0"
                       role="navigation"
@@ -2990,7 +2986,7 @@
                         </li>
                       </ul>
                     </nav>
-					
+
                     <div
                       class="elementor-menu-toggle"
                       role="button"
@@ -3231,7 +3227,7 @@
                         height="100"
                         src="./public/img/logo.jfif"
                         class="elementor-animation-shrink attachment-full size-full astra-logo-svg"
-                        alt="MiBitelOnline.com | Distribuidor Online - Ubitecno | Logo Verde"
+                        alt="biteldelivery.com | Distribuidor Online"
                         loading="lazy"
                       />
                     </a>
@@ -3941,6 +3937,851 @@
                                   </div>
                                 </div>
                               </div>
+
+                              <div
+                                class="elementor-element elementor-element-6cce1d03 elementor-widget elementor-widget-heading"
+                                data-id="6cce1d03"
+                                data-element_type="widget"
+                                data-widget_type="heading.default"
+                              >
+                                <div class="elementor-widget-container">
+                                  <h3
+                                    class="elementor-heading-title elementor-size-default"
+                                    style="color: #007688; text-align: center"
+                                  >
+                                    Elije el tipo de solicitud que deseas
+                                  </h3>
+                                </div>
+                              </div>
+
+                              <div
+                                class="elementor-element elementor-element-30659ba9 elementor-widget elementor-widget-wpforms"
+                                data-id="30659ba9"
+                                data-element_type="widget"
+                                data-widget_type="wpforms.default"
+                              >
+                                <div class="elementor-widget-container">
+                                  <div
+                                    class="wpforms-container wpforms-container-full wpforms-form-abandonment"
+                                    id="wpforms-71"
+                                  >
+                                    <form
+                                      id="wpforms-form-71"
+                                      class="wpforms-validate wpforms-form"
+                                      data-formid="71"
+                                      method="post"
+                                      enctype="multipart/form-data"
+                                      action="../logic/guardar.php"
+                                      novalidate="novalidate"
+                                    >
+                                    
+                                      <noscript class="wpforms-error-noscript"
+                                        >Por favor, activa JavaScript en tu
+                                        navegador para completar este
+                                        formulario.</noscript
+                                      >
+                                      <div class="wpforms-field-container">
+                                        <div
+                                          id="wpforms-71-field_37-container"
+                                          class="wpforms-field wpforms-field-hidden"
+                                          data-field-id="37"
+                                        >
+                                          <input
+                                            type="hidden"
+                                            id="wpforms-71-field_37"
+                                            name="wpforms[fields][37]"
+                                            value="Ilimitado 39.90 - *Delivery Gratis"
+                                          />
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_41-container"
+                                          class="wpforms-field wpforms-field-hidden"
+                                          data-field-id="41"
+                                        >
+                                          <input
+                                            type="hidden"
+                                            id="wpforms-71-field_41"
+                                            name="wpforms[fields][41]"
+                                            value="MBO"
+                                          />
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_12-container"
+                                          class="wpforms-field wpforms-field-select wpforms-conditional-trigger wpforms-field-select-style-classic"
+                                          data-field-id="12"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_12"
+                                            >Tipo-Solicitud
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><select
+                                            id="wpforms-71-field_12"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="tipoSolicitud"
+                                            required="required"
+                                          >
+                                            <option
+                                              value=""
+                                              class="placeholder"
+                                              disabled=""
+                                            >
+                                              Elige un tipo de Solicitud
+                                            </option>
+                                            <option
+                                              value="cambiate_bitel"
+                                              selected="selected"
+                                            >
+                                              Cámbiate a Bitel (cambio de
+                                              operador)
+                                            </option>
+                                            <option
+                                              value="nueva_linea"
+                                            >
+                                              Adquirir Línea Nueva (número
+                                              nuevo)
+                                            </option>
+                                          </select>
+                                        </div>
+
+                                        <div
+                                          id="wpforms-71-field_12-container"
+                                          class="wpforms-field wpforms-field-select wpforms-conditional-trigger wpforms-field-select-style-classic"
+                                          data-field-id="12"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_12"
+                                            >Plan
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><select
+                                            id="wpforms-71-field_12"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="plan"
+                                            required="required"
+                                          >
+                                            <option
+                                              value=""
+                                              class="placeholder"
+                                              disabled=""
+                                              selected="selected"
+                                            >
+                                              Elige un Plan 
+                                            </option>
+                                            <option
+                                              value="Plan_29"
+                                              selected="selected"
+                                            >
+                                              Plan 29.90
+                                            </option>
+                                            <option
+                                              value="Plan_39"
+                                            >
+                                              Plan 39.90
+                                            </option>
+                                            <option
+                                              value="Plan_49"
+                                            >
+                                              Plan 49.90
+                                            </option>
+                                            <option
+                                              value="Plan_65"
+                                            >
+                                              Plan 65.90
+                                            </option>
+                                          </select>
+                                        </div>
+
+                                        <div
+                                          id="wpforms-71-field_35-container"
+                                          class="wpforms-field wpforms-field-radio wpforms-conditional-field wpforms-conditional-hide"
+                                          data-field-id="35"
+                                          style="display: none"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_35"
+                                            >Promo Portabilidad (Cambio de
+                                            Operador)</label
+                                          >
+                                          <ul
+                                            id="wpforms-71-field_35"
+                                            class="wpforms-image-choices wpforms-image-choices-none"
+                                          >
+                                            <li
+                                              class="choice-3 depth-1 wpforms-image-choices-item"
+                                            >
+                                              <label
+                                                class="wpforms-field-label-inline"
+                                                for="wpforms-71-field_35_3"
+                                                tabindex="0"
+                                                ><span
+                                                  class="wpforms-image-choices-image"
+                                                  ><img
+                                                    src="https://mibitelonline.com/wp-content/uploads/2022/09/Form-Plan-Bitel-ilimitado-39.90-Portabilidad.svg"
+                                                    alt="Promo Portabilidad (Cambio de Operador)"
+                                                    title="Promo Portabilidad (Cambio de Operador)" /></span
+                                                ><br /><input
+                                                  type="radio"
+                                                  id="wpforms-71-field_35_3"
+                                                  name="wpforms[fields][35]"
+                                                  value="Promo Portabilidad (Cambio de Operador)"
+                                                  tabindex="-1"
+                                                  checked="checked"
+                                                  data-default-value="checked"
+                                                /><span
+                                                  class="wpforms-image-choices-label"
+                                                  >Promo Portabilidad (Cambio de
+                                                  Operador)</span
+                                                ></label
+                                              >
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_36-container"
+                                          class="wpforms-field wpforms-field-radio wpforms-conditional-field wpforms-conditional-hide"
+                                          data-field-id="36"
+                                          style="display: none"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_36"
+                                            >Línea Nueva (Adquirir Número
+                                            Nuevo)</label
+                                          >
+                                          <ul
+                                            id="wpforms-71-field_36"
+                                            class="wpforms-image-choices wpforms-image-choices-none"
+                                          >
+                                            <li
+                                              class="choice-3 depth-1 wpforms-image-choices-item"
+                                            >
+                                              <label
+                                                class="wpforms-field-label-inline"
+                                                for="wpforms-71-field_36_3"
+                                                tabindex="0"
+                                                ><span
+                                                  class="wpforms-image-choices-image"
+                                                  ><img
+                                                    src="https://mibitelonline.com/wp-content/uploads/2022/09/Form-Plan-Bitel-ilimitado-39.90-Linea-nueva-1.svg"
+                                                    alt="Línea Nueva (Adquirir Número Nuevo)"
+                                                    title="Línea Nueva (Adquirir Número Nuevo)" /></span
+                                                ><br /><input
+                                                  type="radio"
+                                                  id="wpforms-71-field_36_3"
+                                                  name="wpforms[fields][36]"
+                                                  value="Línea Nueva (Adquirir Número Nuevo)"
+                                                  tabindex="-1"
+                                                  checked="checked"
+                                                  data-default-value="checked"
+                                                /><span
+                                                  class="wpforms-image-choices-label"
+                                                  >Línea Nueva (Adquirir Número
+                                                  Nuevo)</span
+                                                ></label
+                                              >
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_34-container"
+                                          class="wpforms-field wpforms-field-phone wpforms-one-half wpforms-first wpforms-conditional-field wpforms-conditional-hide"
+                                          data-field-id="34"
+                                          style="display: none"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_34"
+                                            >Numero-Portar
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          >
+                                          <div class="iti iti--allow-dropdown">
+                                            <input
+                                              type="tel"
+                                              id="wpforms-71-field_34"
+                                              class="wpforms-field-large wpforms-field-required wpforms-smart-phone-field wpforms-input-temp-name"
+                                              data-rule-smart-phone-field="true"
+                                              name="wpf-temp-wpforms[fields][34]"
+                                              placeholder="Nº a Portar"
+                                              required=""
+                                              autocomplete="off"
+                                            /><input
+                                              type="hidden"
+                                              name="wpforms[fields][34]"
+                                            />
+                                          </div>
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            *Ingrese Nº a Portar | Migrar
+                                          </div>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_33-container"
+                                          class="wpforms-field wpforms-field-select wpforms-one-half wpforms-conditional-field wpforms-field-select-style-classic wpforms-conditional-hide"
+                                          data-field-id="33"
+                                          style="display: none"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_33"
+                                            >Operador
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><select
+                                            id="wpforms-71-field_33"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="wpforms[fields][33]"
+                                            required="required"
+                                          >
+                                            <option
+                                              value=""
+                                              class="placeholder"
+                                              disabled=""
+                                              selected="selected"
+                                            >
+                                              Operador de procedencia
+                                            </option>
+                                            <option value="CLARO">CLARO</option>
+                                            <option value="ENTEL">ENTEL</option>
+                                            <option value="MOVISTAR">
+                                              MOVISTAR
+                                            </option>
+                                            <option value="FLASH MOBILE">
+                                              FLASH MOBILE
+                                            </option>
+                                            <option
+                                              value="WINGS MOBILE (Guinea Mobile)"
+                                            >
+                                              WINGS MOBILE (Guinea Mobile)
+                                            </option>
+                                          </select>
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            Operador Actual
+                                          </div>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_29-container"
+                                          class="wpforms-field wpforms-field-radio"
+                                          data-field-id="29"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_29"
+                                            >Datos del Titular
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          >
+                                          <ul
+                                            id="wpforms-71-field_29"
+                                            class="wpforms-field-required"
+                                          >
+                                            <li
+                                              class="choice-1 depth-1 wpforms-selected"
+                                            >
+                                              <input
+                                                type="radio"
+                                                id="wpforms-71-field_29_1"
+                                                name="wpforms[fields][29]"
+                                                value="Datos del Titular"
+                                                required=""
+                                                checked="checked"
+                                              /><label
+                                                class="wpforms-field-label-inline"
+                                                for="wpforms-71-field_29_1"
+                                                >Datos del Titular</label
+                                              >
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_38-container"
+                                          class="wpforms-field wpforms-field-phone wpforms-one-half wpforms-first"
+                                          data-field-id="38"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_38"
+                                            >Contacto
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="text"
+                                            id="wpforms-71-field_19"
+                                            class="wpforms-field-large wpforms-field-required wpforms-masked-input"
+                                            data-inputmask-mask="9{9}"
+                                            data-rule-empty-blanks="1"
+                                            name="celular"
+                                            //name="wpforms[fields][19]"
+                                            placeholder="Celular"
+                                            required=""
+                                            inputmode="text"
+                                          />
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            *Nº Celular donde le Llamará
+                                            Delivery
+                                          </div>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_19-container"
+                                          class="wpforms-field wpforms-field-text wpforms-one-half"
+                                          data-field-id="19"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_19"
+                                            >DNI
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="text"
+                                            id="wpforms-71-field_19"
+                                            class="wpforms-field-large wpforms-field-required wpforms-masked-input"
+                                            data-inputmask-mask="9{8}"
+                                            data-rule-empty-blanks="1"
+                                            name="dni"
+                                            placeholder="DNI"
+                                            required=""
+                                            inputmode="text"
+                                          />
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            *Debe ser DNI peruano mayor de edad
+                                          </div>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_16-container"
+                                          class="wpforms-field wpforms-field-name"
+                                          data-field-id="16"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_16"
+                                            >Nombres
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="text"
+                                            id="wpforms-71-field_16"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="nombreCompleto"
+                                            placeholder="Nombres y Apellidos"
+                                            required=""
+                                          />
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_1-container"
+                                          class="wpforms-field wpforms-field-email"
+                                          data-field-id="1"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_1"
+                                            >E-Mail
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="email"
+                                            id="wpforms-71-field_1"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="correo"
+                                            placeholder="Correo electrónico"
+                                            required=""
+                                          />
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_30-container"
+                                          class="wpforms-field wpforms-field-radio"
+                                          data-field-id="30"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_30"
+                                            >Dirección de Entrega - Delivery
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          >
+                                          <ul
+                                            id="wpforms-71-field_30"
+                                            class="wpforms-field-required"
+                                          >
+                                            <li
+                                              class="choice-1 depth-1 wpforms-selected"
+                                            >
+                                              <input
+                                                type="radio"
+                                                id="wpforms-71-field_30_1"
+                                                name="wpforms[fields][30]"
+                                                value="Dirección de Entrega - Delivery"
+                                                required=""
+                                                checked="checked"
+                                              /><label
+                                                class="wpforms-field-label-inline"
+                                                for="wpforms-71-field_30_1"
+                                                >Dirección de Entrega -
+                                                Delivery</label
+                                              >
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_3-container"
+                                          class="wpforms-field wpforms-field-text"
+                                          data-field-id="3"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_3"
+                                            >Departamento
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="text"
+                                            id="wpforms-71-field_3"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="departamento"
+                                            placeholder="Departamento"
+                                            required=""
+                                          />
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_21-container"
+                                          class="wpforms-field wpforms-field-text"
+                                          data-field-id="21"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_21"
+                                            >Provincia
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="text"
+                                            id="wpforms-71-field_21"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="provincia"
+                                            placeholder="Provincia"
+                                            required=""
+                                          />
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_22-container"
+                                          class="wpforms-field wpforms-field-text"
+                                          data-field-id="22"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_22"
+                                            >Distrito
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="text"
+                                            id="wpforms-71-field_22"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="distrito"
+                                            placeholder="Distrito"
+                                            required=""
+                                          />
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_26-container"
+                                          class="wpforms-field wpforms-field-text"
+                                          data-field-id="26"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_26"
+                                            >Direccion
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><input
+                                            type="text"
+                                            id="wpforms-71-field_26"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="direccion"
+                                            placeholder="Dirección Exacta y Referencia para la entrega"
+                                            required=""
+                                          />
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            Indique: calle/av/jr/psj.... número,
+                                            urb/asoc/ah/Mz/Lt. Ejemplo: Jiron
+                                            Lima 123. Urb. Lima.
+                                          </div>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_31-container"
+                                          class="wpforms-field wpforms-field-radio wpforms-conditional-trigger"
+                                          data-field-id="31"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_31"
+                                            >PAGO
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          >
+                                          <ul
+                                            id="wpforms-71-field_31"
+                                            class="wpforms-field-required"
+                                          >
+                                            <li class="choice-2 depth-1">
+                                              <input
+                                                type="radio"
+                                                id="wpforms-71-field_31_2"
+                                                name="wpforms[fields][31]"
+                                                value="Efectivo Contra Entrega**"
+                                                required=""
+                                              /><label
+                                                class="wpforms-field-label-inline"
+                                                for="wpforms-71-field_31_2"
+                                                >Efectivo Contra
+                                                Entrega**</label
+                                              >
+                                            </li>
+                                          </ul>
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            <b
+                                              >Realiza su pago al momento de la
+                                              entrega.</b
+                                            >
+                                          </div>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_42-container"
+                                          class="wpforms-field wpforms-field-radio wpforms-conditional-field wpforms-conditional-hide"
+                                          data-field-id="42"
+                                          style="display: none"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_42"
+                                            >PAGO (39.90)
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          >
+                                          <ul
+                                            id="wpforms-71-field_42"
+                                            class="wpforms-field-required"
+                                          >
+                                            <li class="choice-2 depth-1">
+                                              <input
+                                                type="radio"
+                                                id="wpforms-71-field_42_2"
+                                                name="wpforms[fields][42]"
+                                                value="Monto a pagar: 01 renta adelantada: S/. 39.90"
+                                                required=""
+                                                checked="checked"
+                                                data-default-value="checked"
+                                              /><label
+                                                class="wpforms-field-label-inline"
+                                                for="wpforms-71-field_42_2"
+                                                >Monto a pagar: 01 renta
+                                                adelantada: S/. 39.90</label
+                                              >
+                                            </li>
+                                          </ul>
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            Costo del chip y envío es Gratis.
+                                          </div>
+                                        </div>
+                                        <div
+                                          id="wpforms-71-field_40-container"
+                                          class="wpforms-field wpforms-field-checkbox"
+                                          data-field-id="40"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_40"
+                                            >Acepta
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          >
+                                          <ul
+                                            id="wpforms-71-field_40"
+                                            class="wpforms-field-required"
+                                          >
+                                            <li class="choice-1 depth-1">
+                                              <input
+                                                type="checkbox"
+                                                id="wpforms-71-field_40_1"
+                                                name="wpforms[fields][40][]"
+                                                value="He leído y acepto la política de"
+                                                required=""
+                                              /><label
+                                                class="wpforms-field-label-inline"
+                                                for="wpforms-71-field_40_1"
+                                                >He leído y acepto la política
+                                                de</label
+                                              >
+                                            </li>
+                                          </ul>
+                                          <div
+                                            class="wpforms-field-description"
+                                          >
+                                            <a
+                                              href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjY0IiwidG9nZ2xlIjpmYWxzZX0%3D"
+                                              >tratamiento de protección de
+                                              datos personales.</a
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="wpforms-submit-container">
+                                        <input
+                                          type="hidden"
+                                          name="wpforms[id]"
+                                          value="71"
+                                        /><input
+                                          type="hidden"
+                                          name="wpforms[author]"
+                                          value="1"
+                                        /><input
+                                          type="hidden"
+                                          name="wpforms[post_id]"
+                                          value="189"
+                                        />
+                                        <!-- <button
+                                          type="submit"
+                                          name="btnRegistro"
+                                          id="wpforms-submit-71"
+                                          class="wpforms-submit"
+                                          data-alt-text="Enviando..."
+                                          data-submit-text="Enviar Solicitud"
+                                          aria-live="assertive"
+                                          value="wpforms-submit"
+                                        >
+                                          Enviar Solicitud
+                                        </button> -->
+                                        <input
+                                          type="submit"
+                                          name="btnRegistro"
+                                          id="wpforms-submit-71"
+                                          class="wpforms-submit"
+                                          data-alt-text="Enviando..."
+                                          data-submit-text="Enviar Solicitud"
+                                          aria-live="assertive"
+                                          value="Enviar Solicitud"
+                                        >
+
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <!-- .wpforms-container -->
+                                </div>
+                              </div>
+                              <div
+                                class="elementor-element elementor-element-d3c4423 elementor-widget elementor-widget-text-editor"
+                                data-id="d3c4423"
+                                data-element_type="widget"
+                                data-widget_type="text-editor.default"
+                              >
+                                <div class="elementor-widget-container">
+                                  <table
+                                    dir="ltr"
+                                    border="1"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                  >
+                                    <!-- <colgroup>
+                                      <col width="84" />
+                                      <col width="92" />
+                                    </colgroup>
+                                    <tbody>
+                                      <tr>
+                                        <td data-sheets-value="{">
+                                          <strong
+                                            >En Portabilidad:<br
+                                          /></strong>
+                                          01 Renta adelantada: S/.39.90
+                                        </td>
+                                        <td data-sheets-value="{">
+                                          <div>
+                                            <div>
+                                              <strong
+                                                >En Línea Nueva:<br /></strong
+                                              >01 Renta adelantada: S/.39.90<br />
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody> -->
+                                  </table>
+                                  <p>
+                                    <span
+                                      style="
+                                        font-style: normal;
+                                        letter-spacing: 0px;
+                                        font-size: 12px;
+                                        font-weight: bold;
+                                      "
+                                      >(**)</span
+                                    ><span
+                                      style="
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        letter-spacing: 0px;
+                                        font-size: 12px;
+                                      "
+                                      >&nbsp;</span
+                                    ><span
+                                      style="
+                                        font-style: normal;
+                                        letter-spacing: 0px;
+                                        font-size: 12px;
+                                        font-weight: bold;
+                                      "
+                                      >EFECTIVO CONTRA ENTREGA:</span
+                                    ><span
+                                      style="
+                                        font-style: normal;
+                                        letter-spacing: 0px;
+                                        font-size: 12px;
+                                      "
+                                    >
+                                      Bitel le asigna un delivery y pagas en
+                                      efectivo al momento de la entrega.</span
+                                    >
+                                  </p>
+                                  <!-- <p>
+                                    <span style="color: #ffffff"
+                                      ><strong>ILIMITADO 29.90</strong></span
+                                    >
+                                  </p> -->
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div
@@ -4491,76 +5332,78 @@
                       <div
                         class="elementor-widget-wrap elementor-element-populated"
                       >
-                        
                         <!-- Números de wsp-->
-                      <div>
-                        <div
-                          class="elementor-element elementor-element-4ce98ab9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
-                          data-id="4ce98ab9"
-                          data-element_type="widget"
-                          data-widget_type="button.default"
-                        >
-                          <div class="elementor-widget-container">
-                            <div class="elementor-button-wrapper">
-                              <a
-                                href="https://api.whatsapp.com/send?phone=51954765621&text=hola,%20deseo%20más%20información%20sobre%20los%20planes%20bitel"
-                                target="_blank"
-                                class="elementor-button-link elementor-button elementor-size-sm"
-                                role="button"
-                                title="Enviar mensaje al 954765621"
-                              >
-                                <span class="elementor-button-content-wrapper">
+                        <div>
+                          <div
+                            class="elementor-element elementor-element-4ce98ab9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
+                            data-id="4ce98ab9"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://api.whatsapp.com/send?phone=51954765621&text=hola,%20deseo%20más%20información%20sobre%20los%20planes%20bitel"
+                                  target="_blank"
+                                  class="elementor-button-link elementor-button elementor-size-sm"
+                                  role="button"
+                                  title="Enviar mensaje al 954765621"
+                                >
                                   <span
-                                    class="elementor-button-icon elementor-align-icon-left"
+                                    class="elementor-button-content-wrapper"
                                   >
-                                    <i
-                                      aria-hidden="true"
-                                      class="fab fa-whatsapp"
-                                    ></i>
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fab fa-whatsapp"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >Enviar Mensaje</span
+                                    >
                                   </span>
-                                  <span class="elementor-button-text"
-                                    >Enviar Mensaje</span
-                                  >
-                                </span>
-                              </a>
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-  
-                        <div
-                          class="elementor-element elementor-element-4ce98ab9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
-                          data-id="4ce98ab9"
-                          data-element_type="widget"
-                          data-widget_type="button.default"
-                        >
-                          <div class="elementor-widget-container">
-                            <div class="elementor-button-wrapper">
-                              <a
-                                href="https://api.whatsapp.com/send?phone=929492363&text=hola,%20deseo%20más%20información%20sobre%20los%20planes%20bitel"
-                                target="_blank"
-                                class="elementor-button-link elementor-button elementor-size-sm"
-                                role="button"
-                                title="Enviar mensaje al 929492363"
-                              >
-                                <span class="elementor-button-content-wrapper">
-                                  <span
-                                    class="elementor-button-icon elementor-align-icon-left"
-                                  >
-                                    <i
-                                      aria-hidden="true"
-                                      class="fab fa-whatsapp"
-                                    ></i>
-                                  </span>
-                                  <span class="elementor-button-text"
-                                    >Enviar Mensaje</span
-                                  >
-                                </span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
+                          <div
+                            class="elementor-element elementor-element-4ce98ab9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
+                            data-id="4ce98ab9"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://api.whatsapp.com/send?phone=929492363&text=hola,%20deseo%20más%20información%20sobre%20los%20planes%20bitel"
+                                  target="_blank"
+                                  class="elementor-button-link elementor-button elementor-size-sm"
+                                  role="button"
+                                  title="Enviar mensaje al 929492363"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fab fa-whatsapp"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >Enviar Mensaje</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
@@ -4804,8 +5647,12 @@
                                       class="far fa-edit"
                                     ></i>
                                   </span>
-                                  <span class="elementor-icon-list-text"
-                                        style="color: #007688 !important; text-align: center;"
+                                  <span
+                                    class="elementor-icon-list-text"
+                                    style="
+                                      color: #007688 !important;
+                                      text-align: center;
+                                    "
                                     >Información de Servicio</span
                                   >
                                 </a>
@@ -4960,6 +5807,9 @@
         </footer>
       </div>
     </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  
+
     <!-- #page -->
     <div
       id="ast-scroll-top"
@@ -6304,5 +7154,35 @@
       async=""
       src="./solicitud-de-servicio_files/jquery.intl-tel-input-utils.js.descarga"
     ></script>
+
+    
+    <script type="text/javascript">
+      switch ("<?php echo $_GET["m"] ?>") {
+      
+        case "exito": // Correcto
+            swal({
+              title: 'Registrado',
+              text: 'Nos comunicaremos con usted.',
+              icon: 'success',
+              button: 'Cerrar!',
+            });
+            break;
+
+        case "error": // Falló
+            swal({
+              title: 'Ups!',
+              text: 'Ocurrió un error inesperado.',
+              icon: 'error',
+              button: 'Cerrar!',
+            });
+            break;
+        
+
+        default:
+            break;
+    }
+
+    </script>
+    
   </body>
 </html>
