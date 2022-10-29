@@ -2932,7 +2932,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-434"
                             >
                               <a
-                                href="./solicitud-de-servicio.html"
+                                href="./solicitud-de-servicio.php"
                                 class="elementor-sub-item elementor-item-active menu-link"
                                 >Información de Servicio</a
                               >
@@ -3125,7 +3125,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-154 current_page_item menu-item-434"
                             >
                               <a
-                                href="./solicitud-de-servicio.html"
+                                href="./solicitud-de-servicio.php"
                                 aria-current="page"
                                 class="elementor-sub-item elementor-item-active menu-link"
                                 tabindex="-1"
@@ -3405,7 +3405,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-154 current_page_item menu-item-434"
                             >
                               <a
-                                href="./solicitud-de-servicio.html"
+                                href="./solicitud-de-servicio.php"
                                 aria-current="page"
                                 class="elementor-sub-item elementor-item-active menu-link"
                                 >Información de Servicio</a
@@ -3598,7 +3598,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-154 current_page_item menu-item-434"
                             >
                               <a
-                                href="./solicitud-de-servicio.html"
+                                href="./solicitud-de-servicio.php"
                                 aria-current="page"
                                 class="elementor-sub-item elementor-item-active menu-link"
                                 tabindex="-1"
@@ -5640,7 +5640,7 @@
                           <div class="elementor-widget-container">
                             <ul class="elementor-icon-list-items">
                               <li class="elementor-icon-list-item">
-                                <a href="./solicitud-de-servicio.html">
+                                <a href="./solicitud-de-servicio.php">
                                   <span class="elementor-icon-list-icon">
                                     <i
                                       aria-hidden="true"
