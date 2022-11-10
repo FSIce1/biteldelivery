@@ -32,6 +32,9 @@
             <thead>
                 <tr>
                     <th>Tipo Solicitud</th>
+                    <th>O. Procedencia</th>
+                    <th>M. Actual</th>
+                    <th>H. Contacto</th>
                     <th>Plan</th>
                     <th>Celular</th>
                     <th>DNI</th>
@@ -60,18 +63,84 @@
                         ?></td>
                         <td><?php
                         
+                            switch ($row["operadorProcedencia"]) {
+                                case 'movistar':
+                                    echo "Movistar";
+                                    break;
+                                case 'entel':
+                                    echo "Entel Perú S.A";
+                                    break;
+                                case 'claro':
+                                    echo "Claro";
+                                    break;
+                                case 'flash':
+                                    echo "Flash Mobile S.A.";
+                                    break;
+                                case 'guinea':
+                                    echo "Guinea Mobile S.A.C.";
+                                    break;
+                                
+                                default:
+                                    echo ""; 
+                                    break;
+                            }
+                            
+                        ?></td>
+                        <td><?php
+                        
+                            switch ($row["modalidadActual"]) {
+                                case 'pago_plan':
+                                    echo "Pago Plan";
+                                    break;
+                                case 'hace_recargas':
+                                    echo "Hace Recargas";
+                                    break;
+                                
+                                default:
+                                    echo ""; 
+                                    break;
+                            }
+                            
+                        ?></td>
+                        <td><?php
+                        
+                            switch ($row["horarioContacto"]) {
+                                case 'manana':
+                                    echo "Mañana (08:00 a 12:00)";
+                                    break;
+                                case 'tarde':
+                                    echo "Tarde (12:00 a 18:00)";
+                                    break;
+                                case 'disponible':
+                                    echo "Disponiblidad todo el día";
+                                    break;
+                                
+                                default:
+                                    echo ""; 
+                                    break;
+                            }
+                            
+                        ?></td>
+                        <td><?php
+                        
                             switch ($row["plan"]) {
                                 case 'plan_29':
-                                    echo "Plan 29.90";
+                                    echo "Ilimitado 29.90";
+                                    break;
+                                case 'plan_29_estudiante':
+                                    echo "Estudiante 29.90";
                                     break;
                                 case 'plan_39':
-                                    echo "Plan 39.90";
+                                    echo "Ilimitado 39.90";
                                     break;
                                 case 'plan_49':
-                                    echo "Plan 49.90";
+                                    echo "Ilimitado 49.90";
                                     break;
                                 case 'plan_65':
-                                    echo "Plan 65.90";
+                                    echo "Ilimitado 65.90";
+                                    break;
+                                case 'plan_105':
+                                    echo "Ilimitado 105.90";
                                     break;
                                 
                                 default:

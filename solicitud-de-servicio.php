@@ -4005,6 +4005,7 @@
                                             value="MBO"
                                           />
                                         </div>
+
                                         <div
                                           id="wpforms-71-field_12-container"
                                           class="wpforms-field wpforms-field-select wpforms-conditional-trigger wpforms-field-select-style-classic"
@@ -4018,9 +4019,10 @@
                                               >*</span
                                             ></label
                                           ><select
-                                            id="wpforms-71-field_12"
+                                            id="wpforms-71-field_12_tipo_solicitud"
                                             class="wpforms-field-large wpforms-field-required"
                                             name="tipoSolicitud"
+                                            onclick="tipoSolicitudChange()"
                                             required="required"
                                           >
                                             <option
@@ -4042,6 +4044,143 @@
                                             >
                                               Adquirir Línea Nueva (número
                                               nuevo)
+                                            </option>
+                                          </select>
+                                        </div>
+
+                                        <div
+                                          id="wpforms-71-field_12-container_operador_procedencia"
+                                          class="wpforms-field wpforms-field-select wpforms-conditional-trigger wpforms-field-select-style-classic"
+                                          data-field-id="12"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_12"
+                                            >Operador de procedencia
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><select
+                                            id="wpforms-71-field_12"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="operadorProcedencia"
+                                            required="required"
+                                          >
+                                            <option
+                                              value=""
+                                              class="placeholder"
+                                              disabled=""
+                                            >
+                                              Elige un operador 
+                                            </option>
+                                            <option
+                                              value="movistar"
+                                              selected="selected"
+                                            >
+                                              Movistar
+                                            </option>
+                                            <option
+                                              value="entel"
+                                            >
+                                              Entel Perú S.A
+                                            </option>
+                                            <option
+                                              value="claro"
+                                            >
+                                              Claro
+                                            </option>
+                                            <option
+                                              value="flash"
+                                            >
+                                              Flash Mobile S.A.
+                                            </option>
+                                            <option
+                                              value="guinea"
+                                            >
+                                              Guinea Mobile S.A.C.
+                                            </option>
+                                          </select>
+                                        </div>
+
+                                        <div
+                                          id="wpforms-71-field_12-container_modalidad_actual"
+                                          class="wpforms-field wpforms-field-select wpforms-conditional-trigger wpforms-field-select-style-classic"
+                                          data-field-id="12"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_12"
+                                            >Modalidad Actual
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><select
+                                            id="wpforms-71-field_12"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="modalidadActual"
+                                            required="required"
+                                          >
+                                            <option
+                                              value=""
+                                              class="placeholder"
+                                              disabled=""
+                                            >
+                                              Elige una modalidad 
+                                            </option>
+                                            <option
+                                              value="pago_plan"
+                                              selected="selected"
+                                            >
+                                              Pago Plan
+                                            </option>
+                                            <option
+                                              value="hace_recargas"
+                                            >
+                                              Hace Recargas
+                                            </option>
+                                          </select>
+                                        </div>
+
+                                        <div
+                                          id="wpforms-71-field_12-container"
+                                          class="wpforms-field wpforms-field-select wpforms-conditional-trigger wpforms-field-select-style-classic"
+                                          data-field-id="12"
+                                        >
+                                          <label
+                                            class="wpforms-field-label wpforms-label-hide"
+                                            for="wpforms-71-field_12"
+                                            >Horario de Contacto con Delivery
+                                            <span class="wpforms-required-label"
+                                              >*</span
+                                            ></label
+                                          ><select
+                                            id="wpforms-71-field_12"
+                                            class="wpforms-field-large wpforms-field-required"
+                                            name="horarioContacto"
+                                            required="required"
+                                          >
+                                            <option
+                                              value=""
+                                              class="placeholder"
+                                              disabled=""
+                                            >
+                                              Elige un horario 
+                                            </option>
+                                            <option
+                                              value="manana"
+                                              selected="selected"
+                                            >
+                                              Mañana (08:00 a 12:00)
+                                            </option>
+                                            <option
+                                              value="tarde"
+                                            >
+                                              Tarde (12:00 a 18:00)
+                                            </option>
+                                            <option
+                                              value="disponible"
+                                            >
+                                              Disponiblidad todo el día
                                             </option>
                                           </select>
                                         </div>
@@ -4073,25 +4212,36 @@
                                               Elige un Plan 
                                             </option>
                                             <option
+                                              value="Plan_29_estudiante"
+                                              selected="selected"
+                                            >
+                                              Estudiante 29.90 (+s/10.00 Costo Delivery)
+                                            </option>
+                                            <option
                                               value="Plan_29"
                                               selected="selected"
                                             >
-                                              Plan 29.90
+                                              Ilimitado 29.90 (+s/10.00 Costo Delivery)
                                             </option>
                                             <option
                                               value="Plan_39"
                                             >
-                                              Plan 39.90
+                                              Ilimitado 39.90
                                             </option>
                                             <option
                                               value="Plan_49"
                                             >
-                                              Plan 49.90
+                                              Ilimitado 49.90 (Pago Solo s/.24.90 x 3 meses)
                                             </option>
                                             <option
                                               value="Plan_65"
                                             >
-                                              Plan 65.90
+                                              Ilimitado 65.90
+                                            </option>
+                                            <option
+                                              value="Plan_105"
+                                            >
+                                              Ilimitado 105.90
                                             </option>
                                           </select>
                                         </div>
@@ -7156,6 +7306,23 @@
     ></script>
 
     
+    <script>
+    function tipoSolicitudChange(){
+      
+      var selectBox = document.getElementById("wpforms-71-field_12_tipo_solicitud");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+      
+      if(selectedValue == 'cambiate_bitel'){
+        document.getElementById("wpforms-71-field_12-container_operador_procedencia").style.display = "block";
+        document.getElementById("wpforms-71-field_12-container_modalidad_actual").style.display = "block";
+      } else {
+        document.getElementById("wpforms-71-field_12-container_operador_procedencia").style.display = "none";
+        document.getElementById("wpforms-71-field_12-container_modalidad_actual").style.display = "none";
+      }
+
+    }
+    </script>
+
     <script type="text/javascript">
       switch ("<?php echo $_GET["m"] ?>") {
       
