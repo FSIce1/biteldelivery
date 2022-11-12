@@ -7,10 +7,10 @@
     $bd = "kansfjpu_bitel";
 
     //*local
-    $host = "localhost";
-    $user = "root";
-    $clave = "";
-    $bd = "biteldelivery";
+    // $host = "localhost";
+    // $user = "root";
+    // $clave = "";
+    // $bd = "biteldelivery";
 
     try{
         $conectar = mysqli_connect($host,$user,$clave,$bd);
