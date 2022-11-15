@@ -3714,6 +3714,49 @@
           </div>
         </section>
       </div>
+      
+      <div id="module14" class="ModuleWrapper">
+        
+        <div class="bitel-hotline"> 
+          <div class="hotline"> 
+            <a
+              href="https://api.whatsapp.com/send?phone=51954765621&text=Hola,%20deseo%20más%20información%20sobre%20los%20planes%20bitel"
+              target="_blank"
+              title="Enviar mensaje al 954765621"           
+            > 
+              <div class="hotline__icon"> 
+                <img src="https://i.ibb.co/dJcmX3v/iconwsp.png" alt="" width="60" height="60"> 
+              </div> 
+            </a> 
+          </div>
+        </div>
+          
+        <style> 
+          @keyframes zoom-out { 
+            100% { opacity: 0; width: 120px; height: 120px; }
+          }
+          @keyframes zoom-out-in { 50% { opacity: .5; width: 85px; height: 85px; }
+            100% { opacity: 0; width: 70px; height: 70px; }
+          }
+          .bitel-hotline { position: fixed; right: 25px; bottom: 100px; z-index: 9; }
+          .bitel-hotline .hotline >a { display: inline-flex; position: relative; justify-content: center; align-items: center; width: 60px; height: 60px; border-radius: 50%; /*border: 2px solid rgba(255,255,255,.61);*/
+          background: #21BDBB; }
+          .bitel-hotline .hotline >a i { font-size: 30px; color: #FFFFFF; }
+          .bitel-hotline .hotline >a:before { content: ''; position: absolute; top: 50%; left: 50%; width: 70px; height: 70px; transform: translate(-50%, -50%); animation: zoom-out 4s infinite; border: 4px solid rgba(33,189,187,.5); border-radius: 50%; opacity: .1; }
+          .bitel-hotline .hotline >a:after { content: ''; position: absolute; top: 50%; left: 50%; width: 70px; height: 70px; transform: translate(-50%, -50%); animation: zoom-out-in 4s infinite; background: rgba(33,189,187,.5); border-radius: 50%; z-index: -1; opacity: .5; }
+          @media(max-width: 544px){ @keyframes zoom-out { 100% { opacity: 0; width: 80px; height: 80px; }
+          }
+          @keyframes zoom-out-in { 50% { opacity: .5; width: 65px; height: 65px; }
+           100% { opacity: 0; width: 50px; height: 50px; }
+          }
+          .bitel-hotline .hotline >a:before, .bitel-hotline .hotline >a:after, .hotline__icon img, .bitel-hotline .hotline >a{ width: 40px; height:40px; }
+          .bitel-hotline{ right:25px; bottom:120px; }
+          .bitel-chatbot .chatbot-action{ right:20px; }
+          .hoja-chat img{ width: 60px; height:60px; }
+          }
+        </style>
+      </div>
+
       <div id="content" class="site-content">
         <div class="ast-container">
           <div id="primary" class="content-area primary">
