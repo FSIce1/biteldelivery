@@ -3708,7 +3708,7 @@
           }
         </style>
       </div>
-      
+
       <div id="content" class="site-content">
         <div class="ast-container">
           <div id="primary" class="content-area primary">
@@ -4636,6 +4636,26 @@
                                             </li>
                                           </ul>
                                         </div>
+
+
+                                        <select id="areas" name="departamento" required="required"
+                                            class="wpforms-field-large wpforms-field-required">
+                                          <option value="">--Departamento--</option>
+                                        </select>
+                                        <br>
+
+                                        <select id="categorias" name="provincia" required="required" 
+                                            class="wpforms-field-large wpforms-field-required">
+                                          <option value="">--Provincia--</option>
+                                        </select>
+                                        <br>
+
+                                        <select id="subCategorias" name="distrito" required="required"
+                                            class="wpforms-field-large wpforms-field-required">
+                                          <option value="">--Distrito--</option>
+                                        </select>
+
+                                        <!--
                                         <div
                                           id="wpforms-71-field_3-container"
                                           class="wpforms-field wpforms-field-text"
@@ -4699,6 +4719,8 @@
                                             required=""
                                           />
                                         </div>
+                                        -->
+
                                         <div
                                           id="wpforms-71-field_26-container"
                                           class="wpforms-field wpforms-field-text"
@@ -6088,6 +6110,658 @@
       src="./solicitud-de-servicio_files/frontend.min.js.descarga"
       id="astra-theme-js-js"
     ></script>
+
+    <script>
+    var areas = [
+      {id:1,name:"Amazonas"},
+      {id:2,name:"Áncash"},
+      {id:3,name:"Apurímac"},
+      {id:4,name:"Arequipa"},
+      {id:5,name:"Ayachucho"},
+      {id:6,name:"Cajamarca"},
+      {id:7,name:"Callao"},
+      {id:8,name:"Cusco"},
+      {id:9,name:"Huancavelica"},
+      {id:10,name:"Huanuco"},
+      {id:11,name:"Ica"},
+      {id:12,name:"Junin"},
+      {id:13,name:"La Libertad"},
+      {id:14,name:"Lambayeque"},
+      {id:15,name:"Lima"},
+      {id:16,name:"Loreto"},
+      {id:17,name:"Madre de Dios"},
+      {id:18,name:"Moquegua"},
+      {id:19,name:"Pasco"},
+      {id:20,name:"Piura"},
+      {id:21,name:"Puno"},
+      {id:22,name:"San Martin"},
+      {id:23,name:"Tacna"},
+      {id:24,name:"Tumbes"},
+      {id:25,name:"Ucayali"},
+    ]
+
+    var categorias = [
+
+      //Campo 1
+      {id:1,name:"Chachapoyas",idArea:1},
+      {id:2,name:"Bagua",idArea:1},
+      {id:3,name:"Utcubamba",idArea:1},
+
+      //Campo 2
+      {id:4,name:"Huaraz",idArea:2},
+      {id:5,name:"Asuncion",idArea:2},
+      {id:6,name:"Casma",idArea:2},
+      {id:7,name:"Huarmey",idArea:2},
+      {id:8,name:"Pomabamba",idArea:2},
+      {id:9,name:"Recuay",idArea:2},
+      {id:10,name:"Santa",idArea:2},
+      {id:11,name:"Yungay",idArea:2},
+
+      //Campo 3
+      {id:12,name:"Abancay",idArea:3},
+      {id:13,name:"Andahuaylas",idArea:3},
+      {id:14,name:"Chincheros",idArea:3},
+
+      //Campo 4
+      {id:15,name:"Arequipa",idArea:4},
+      {id:16,name:"Camana",idArea:4},
+      {id:17,name:"Caylloma",idArea:4},
+      {id:18,name:"Islay",idArea:4},
+      {id:19,name:"La union",idArea:4},
+
+      //Campo 5
+      {id:20,name:"Huamanga",idArea:5},
+      {id:21,name:"Cangallo",idArea:5},
+      {id:22,name:"Huanta",idArea:5},
+
+      //Campo 6
+      {id:23,name:"Cajamarca",idArea:6},
+      {id:24,name:"Cajabamba",idArea:6},
+      {id:25,name:"Chota",idArea:6},
+      {id:26,name:"Cutervo",idArea:6},
+      {id:27,name:"Jaen",idArea:6},
+      {id:28,name:"San Marcos",idArea:6},
+
+      //Campo 7
+      {id:29,name:"Callao",idArea:7},
+
+      //Campo 8
+      {id:30,name:"Cusco",idArea:8},
+      {id:31,name:"Calca",idArea:8},
+      {id:32,name:"Canchis",idArea:8},
+      {id:33,name:"Espinar",idArea:8},
+      {id:34,name:"La Convencion",idArea:8},
+      {id:35,name:"Quispicanchi",idArea:8},
+      
+      //Campo 9
+      {id:36,name:"Huancavelica",idArea:9},
+      {id:37,name:"Angares",idArea:9},
+      {id:38,name:"Taycaja",idArea:9},
+
+      //Campo 10
+      {id:39,name:"Huanuco",idArea:10},
+      {id:40,name:"Leoncio Prado",idArea:10},
+
+      //Campo 11
+      {id:41,name:"Ica",idArea:11},
+      {id:42,name:"Chincha",idArea:11},
+      {id:43,name:"Nazca",idArea:11},
+      {id:44,name:"Pisco",idArea:11},
+
+      //Campo 12
+      {id:45,name:"Huancayo",idArea:12},
+      {id:46,name:"Concepcion",idArea:12},
+      {id:47,name:"Chanchamayo",idArea:12},
+      {id:48,name:"Jauja",idArea:12},
+      {id:49,name:"Satipo",idArea:12},
+      {id:50,name:"Tarma",idArea:12},
+      {id:51,name:"Yauli",idArea:12},
+      {id:52,name:"Chupaca",idArea:12},
+
+      //Campo 13
+      {id:53,name:"Trujillo",idArea:13},
+      {id:54,name:"Chepen",idArea:13},
+      {id:55,name:"Julcan",idArea:13},
+      {id:56,name:"Otuzco",idArea:13},
+      {id:57,name:"Sanchez Carrion",idArea:13},
+      {id:58,name:"Viru",idArea:13},
+
+      //Campo 14
+      {id:59,name:"Chiclayo",idArea:14},
+      {id:60,name:"Ferreñafe",idArea:14},
+      {id:61,name:"Lambayeque",idArea:14},
+
+      //Campo 15
+      {id:62,name:"Lima",idArea:15},
+      {id:63,name:"Barranca",idArea:15},
+      {id:64,name:"Canta",idArea:15},
+      {id:65,name:"Huarochiri",idArea:15},
+      {id:66,name:"Huaraura",idArea:15},
+      {id:67,name:"Oyon",idArea:15},
+
+      //Campo 16
+      {id:68,name:"Maynas",idArea:16},
+      {id:69,name:"Alto Amazonas",idArea:16},
+
+      //Campo 17
+      {id:70,name:"Tambopata",idArea:17},
+
+      //Campo 18
+      {id:71,name:"Mariscal Nieto",idArea:18},
+      {id:72,name:"Ilo",idArea:18},
+
+      //Campo 19
+      {id:73,name:"Pasco",idArea:19},
+
+      //Campo 20
+      {id:74,name:"Piura",idArea:20},
+      {id:75,name:"Ayabaca",idArea:20},
+      {id:76,name:"Morropon",idArea:20},
+      {id:77,name:"Palca",idArea:20},
+      {id:78,name:"Sullana",idArea:20},
+      {id:79,name:"Talara",idArea:20},
+      {id:80,name:"Sechura",idArea:20},
+
+      //Campo 21
+      {id:81,name:"Puno",idArea:21},
+      {id:82,name:"Azangaro",idArea:21},
+      {id:83,name:"Carabaya",idArea:21},
+      {id:84,name:"Chucuito",idArea:21},
+      {id:85,name:"El Collao",idArea:21},
+      {id:86,name:"Huancane",idArea:21},
+      {id:87,name:"Melgar",idArea:21},
+      {id:88,name:"Santo Antonio de Putina",idArea:21},
+      {id:89,name:"San Roman",idArea:21},
+      {id:90,name:"Sandia",idArea:21},
+
+      //Campo 22
+      {id:91,name:"Moyobamba",idArea:22},
+      {id:92,name:"Bellavista",idArea:22},
+      {id:93,name:"Mariscal Caceres",idArea:22},
+      {id:94,name:"San Martin",idArea:22},
+      {id:95,name:"Tocache",idArea:22},
+
+      //Campo 23
+      {id:96,name:"Tacna",idArea:23},
+
+      //Campo 24
+      {id:97,name:"Tumbes",idArea:24},
+      {id:98,name:"Zarumilla",idArea:24},
+
+      //Campo 25
+      {id:99,name:"Coronel Portillo",idArea:25},
+      {id:100,name:"Padre Abad",idArea:25},
+      {id:101,name:"Purus",idArea:25},
+  
+    ]
+
+    var subCategorias = [
+
+      // Campo 1
+      {id:1,name:"Chachapoyas",idCategoria:1},
+      {id:2,name:"Soloco",idCategoria:1},
+      
+      {id:3,name:"La Peca",idCategoria:2},
+
+      {id:4,name:"Bagua Grande",idCategoria:3},
+      
+      // Campo 2
+      {id:5,name:"Huaraz",idCategoria:4},
+      {id:6,name:"Independencia",idCategoria:4},
+
+      {id:7,name:"Chacas",idCategoria:5},
+
+      {id:8,name:"Casma",idCategoria:6},
+      {id:9,name:"Buena Vista Alta",idCategoria:6},
+      {id:10,name:"Comandante Noel",idCategoria:6},
+
+      {id:11,name:"Huarmey",idCategoria:7},
+
+      {id:12,name:"Pomabamba",idCategoria:8},
+
+      {id:13,name:"Recuay",idCategoria:9},
+      {id:14,name:"Catac",idCategoria:9},
+      {id:15,name:"Ticapampa",idCategoria:9},
+
+      {id:16,name:"Chimbote",idCategoria:10},
+      {id:17,name:"Coishco",idCategoria:10},
+      {id:18,name:"Santa",idCategoria:10},
+      {id:19,name:"Nuevo Chimbote",idCategoria:10},
+
+      {id:20,name:"Yungay",idCategoria:11},
+      
+      // Campo 3
+      {id:21,name:"Abancay",idCategoria:12},
+      {id:22,name:"Tamburco",idCategoria:12},
+
+      {id:23,name:"Andahuaylas",idCategoria:13},
+      {id:24,name:"San Jeronimo",idCategoria:13},
+      {id:25,name:"Talavera",idCategoria:13},
+
+      {id:26,name:"Chincheros",idCategoria:14},
+      
+      // Campo 4
+      {id:27,name:"Arequipa",idCategoria:15},
+      {id:28,name:"Alto Selva Alegre",idCategoria:15},
+      {id:29,name:"Cayma",idCategoria:15},
+      {id:30,name:"Cerro Colorado",idCategoria:15},
+      {id:31,name:"Characato",idCategoria:15},
+      {id:32,name:"Jacobo Hunter",idCategoria:15},
+      {id:33,name:"Mariano Melgar",idCategoria:15},
+      {id:34,name:"Miraflores",idCategoria:15},
+      {id:35,name:"Paucarpata",idCategoria:15},
+      {id:36,name:"Sabandia",idCategoria:15},
+      {id:37,name:"Sachaca",idCategoria:15},
+      {id:38,name:"Socabaya",idCategoria:15},
+      {id:39,name:"Tiabaya",idCategoria:15},
+      {id:40,name:"Yanahuara",idCategoria:15},
+      {id:41,name:"Yura",idCategoria:15},
+      {id:42,name:"Jose Luis Bustamante y Rivero",idCategoria:15},
+
+      {id:43,name:"Camana",idCategoria:16},
+      {id:44,name:"Jose Maria Quimper",idCategoria:16},
+      {id:45,name:"Mariscal Caceres",idCategoria:16},
+      {id:46,name:"Nicolas de Pierola",idCategoria:16},
+      {id:47,name:"Samuel Pastor",idCategoria:16},
+
+      {id:48,name:"Majes",idCategoria:17},
+
+      {id:49,name:"Mollendo",idCategoria:18},
+      {id:50,name:"Cocachacra",idCategoria:18},
+      {id:51,name:"Dean Valdivia",idCategoria:18},
+      {id:52,name:"Islay",idCategoria:18},
+      {id:53,name:"Mejia",idCategoria:18},
+      {id:54,name:"Punta de Bombon",idCategoria:18},
+
+      {id:55,name:"Cotahuasi",idCategoria:19},
+
+      // Campo 5
+      {id:56,name:"Ayachucho",idCategoria:20},
+      {id:57,name:"Carmen Alto",idCategoria:20},
+      {id:58,name:"San Juan Bautista",idCategoria:20},
+      {id:59,name:"Jesus Nazareno",idCategoria:20},
+
+      {id:60,name:"Cangallo",idCategoria:21},
+
+      {id:61,name:"Huanta",idCategoria:22},
+      {id:62,name:"Luiricocha",idCategoria:22},
+
+      // Campo 6
+      {id:63,name:"Cajamarca",idCategoria:23},
+
+      {id:64,name:"Cajabamba",idCategoria:24},
+
+      {id:65,name:"Chota",idCategoria:25},
+
+      {id:66,name:"Cutervo",idCategoria:26},
+
+      {id:67,name:"Jaen",idCategoria:27},
+
+      {id:68,name:"Pedro Galvez",idCategoria:28},
+
+      // Campo 7
+      {id:69,name:"Callao",idCategoria:29},
+      {id:70,name:"Bellavista",idCategoria:29},
+      {id:71,name:"Carmen de la Leguia Reynoso",idCategoria:29},
+      {id:72,name:"La Perla",idCategoria:29},
+      {id:73,name:"La Punta",idCategoria:29},
+      {id:74,name:"Ventanilla",idCategoria:29},
+
+      // Campo 8
+      {id:75,name:"Cusco",idCategoria:30},
+      {id:76,name:"San Jeronimo",idCategoria:30},
+      {id:77,name:"San Sebastian",idCategoria:30},
+      {id:78,name:"Santiago",idCategoria:30},
+      {id:79,name:"Wamchaq",idCategoria:30},
+
+      {id:80,name:"Calca",idCategoria:31},
+
+      {id:81,name:"Sicuani",idCategoria:32},
+
+      {id:82,name:"Santa Ana",idCategoria:33},
+      {id:83,name:"Pichari",idCategoria:33},
+
+      {id:84,name:"Urcos",idCategoria:34},
+
+      {id:85,name:"Urubamba",idCategoria:35},
+      {id:86,name:"Ollantaytambo",idCategoria:35},
+      {id:87,name:"Yucatay",idCategoria:35},
+
+      // Campo 9
+      {id:88,name:"Huancavelica",idCategoria:36},
+      {id:89,name:"Ascencion",idCategoria:36},
+
+      {id:90,name:"Lircay",idCategoria:37},
+
+      {id:91,name:"Pampas",idCategoria:38},
+
+      // Campo 10
+      {id:92,name:"Huanuco",idCategoria:39},
+      {id:93,name:"Amarillis",idCategoria:39},
+      {id:94,name:"Pilco Marca",idCategoria:39},
+
+      {id:95,name:"Rupa Rupa",idCategoria:40},
+
+      // Campo 11
+      {id:96,name:"Ica",idCategoria:41},
+      {id:97,name:"La Tinguiña",idCategoria:41},
+      {id:98,name:"Los Aquijes",idCategoria:41},
+      {id:99,name:"Pachacutec",idCategoria:41},
+      {id:100,name:"Parcona",idCategoria:41},
+      {id:101,name:"Pueblo Nuevo",idCategoria:41},
+      {id:102,name:"Santiago",idCategoria:41},
+      {id:103,name:"Subtanjalla",idCategoria:41},
+      {id:104,name:"Tate",idCategoria:41},
+
+      {id:105,name:"Chincha Alta",idCategoria:42},
+      {id:106,name:"Chincha Baja",idCategoria:42},
+      {id:107,name:"Grocio Prado",idCategoria:42},
+      {id:108,name:"Pueblo Nuevo",idCategoria:42},
+      {id:109,name:"Sunampe",idCategoria:42},
+      {id:110,name:"Tambo de Mora",idCategoria:42},
+
+      {id:111,name:"Nazca",idCategoria:43},
+      {id:112,name:"Changuillo",idCategoria:43},
+      {id:113,name:"El Ingenio",idCategoria:43},
+      {id:114,name:"Vista Alegre",idCategoria:43},
+
+      {id:115,name:"Pisco",idCategoria:44},
+      {id:116,name:"Independencia",idCategoria:44},
+      {id:117,name:"Paracas",idCategoria:44},
+      {id:118,name:"San Andres",idCategoria:44},
+      {id:119,name:"San Clemente",idCategoria:44},
+      {id:120,name:"Tupac Amaru Inca",idCategoria:44},
+
+      // Campo 12
+      {id:121,name:"Huancayo",idCategoria:45},
+      {id:122,name:"Chilca",idCategoria:45},
+      {id:123,name:"El Tambo",idCategoria:45},
+      {id:124,name:"Hualhuas",idCategoria:45},
+      {id:125,name:"Huancan",idCategoria:45},
+      {id:126,name:"Pilcomayo",idCategoria:45},
+      {id:127,name:"Quilcas",idCategoria:45},
+      {id:128,name:"San Agustin",idCategoria:45},
+
+      {id:129,name:"Concepcion",idCategoria:46},
+      {id:130,name:"Matahuasi",idCategoria:46},
+
+      {id:131,name:"Chanchamayo",idCategoria:47},
+      {id:132,name:"Pichanaqui",idCategoria:47},
+      {id:133,name:"San Ramón",idCategoria:47},
+
+      {id:134,name:"Jauja",idCategoria:48},
+      {id:135,name:"Acolla",idCategoria:48},
+      {id:136,name:"Ataura",idCategoria:48},
+      {id:137,name:"Huamali",idCategoria:48},
+      {id:138,name:"Muquiyauyo",idCategoria:48},
+      {id:139,name:"Yauyos",idCategoria:48},
+
+      {id:140,name:"Satipo",idCategoria:49},
+      {id:141,name:"Mazamari",idCategoria:49},
+      {id:142,name:"Pangoa",idCategoria:49},
+      {id:143,name:"Rio Negro",idCategoria:49},
+
+      {id:144,name:"Tarma",idCategoria:50},
+      {id:145,name:"Acobamba",idCategoria:50},
+      {id:146,name:"La unión",idCategoria:50},
+
+      {id:147,name:"La Oroya",idCategoria:51},
+      {id:148,name:"Santa Rosa de Sacco",idCategoria:51},
+
+      {id:149,name:"Chupaca",idCategoria:52},
+      {id:150,name:"Ahuac",idCategoria:52},
+      {id:151,name:"Huamancaca Chico",idCategoria:52},
+
+      // Campo 13
+      {id:152,name:"Trujillo",idCategoria:53},
+      {id:153,name:"El Provenir",idCategoria:53},
+      {id:154,name:"Florencia de Mora",idCategoria:53},
+      {id:155,name:"Huanchaco",idCategoria:53},
+      {id:156,name:"La Esperanza",idCategoria:53},
+      {id:157,name:"Laredo",idCategoria:53},
+
+      {id:158,name:"Chepen",idCategoria:54},
+      {id:159,name:"Pachanga",idCategoria:54},
+      {id:160,name:"Pueblo Nuevo",idCategoria:54},
+
+      {id:161,name:"Julcan",idCategoria:55},
+      {id:162,name:"Cajamarca",idCategoria:55},
+      {id:163,name:"Carabamba",idCategoria:55},
+
+      {id:164,name:"Otuzco",idCategoria:56},
+
+      {id:165,name:"Huamachuco",idCategoria:57},
+      
+      {id:166,name:"Viru",idCategoria:58},
+      {id:167,name:"Chao",idCategoria:58},
+
+      // Campo 14
+      {id:168,name:"Chiclayo",idCategoria:59},
+      {id:169,name:"Jose Leonardo Ortiz",idCategoria:59},
+      {id:170,name:"La Vitoria",idCategoria:59},
+      {id:171,name:"Picsi",idCategoria:59},
+      {id:172,name:"Pimentel",idCategoria:59},
+      {id:173,name:"Santa Rosa",idCategoria:59},
+      {id:174,name:"Pomalca",idCategoria:59},
+
+      {id:175,name:"Ferreñafe",idCategoria:60},
+
+      {id:176,name:"Lambayeque",idCategoria:61},
+      {id:177,name:"Illimo",idCategoria:61},
+      {id:178,name:"Mochumi",idCategoria:61},
+      {id:179,name:"Morrope",idCategoria:61},
+      {id:180,name:"Pacora",idCategoria:61},
+      {id:181,name:"San Jose",idCategoria:61},
+      {id:182,name:"Tucume",idCategoria:61},
+
+      // Campo 15
+      {id:183,name:"Lima",idCategoria:62},
+      {id:184,name:"Ate",idCategoria:62},
+      {id:185,name:"Barranco",idCategoria:62},
+      {id:186,name:"Breña",idCategoria:62},
+      {id:187,name:"Carabayllo",idCategoria:62},
+      {id:188,name:"Chorrillos",idCategoria:62},
+      {id:189,name:"Chomas",idCategoria:62},
+      {id:190,name:"El Agustino",idCategoria:62},
+      {id:191,name:"Idependencia",idCategoria:62},
+      {id:192,name:"Jesus Maria",idCategoria:62},
+      {id:193,name:"La Molina",idCategoria:62},
+      {id:194,name:"La Victoria",idCategoria:62},
+      {id:195,name:"Lince",idCategoria:62},
+      {id:196,name:"Los Olivos",idCategoria:62},
+      {id:197,name:"Magdalena Del Mar",idCategoria:62},
+      {id:198,name:"Pueblo Libre",idCategoria:62},
+      {id:199,name:"Miraflores",idCategoria:62},
+      {id:200,name:"Puente Piedra",idCategoria:62},
+      {id:201,name:"Rimac",idCategoria:62},
+      {id:202,name:"San Borja",idCategoria:62},
+      {id:203,name:"San Isidro",idCategoria:62},
+      {id:204,name:"San Juan de Lurigancho",idCategoria:62},
+      {id:205,name:"San Juan de Miraflores",idCategoria:62},
+      {id:206,name:"San Luis",idCategoria:62},
+      {id:207,name:"San Martin de Porres",idCategoria:62},
+
+      {id:208,name:"Barranca",idCategoria:63},
+      {id:209,name:"Paramonga",idCategoria:63},
+      {id:210,name:"Pativilca",idCategoria:63},
+      {id:211,name:"Supe",idCategoria:63},
+      {id:212,name:"Supe Puerto",idCategoria:63},
+
+      {id:213,name:"Santa",idCategoria:64},
+
+      {id:214,name:"Santa Eulalia",idCategoria:65},
+
+      {id:215,name:"Huacho",idCategoria:66},
+      {id:216,name:"Caleta de Carquin",idCategoria:66},
+      {id:217,name:"Hualmay",idCategoria:66},
+      {id:218,name:"Huaura",idCategoria:66},
+      {id:219,name:"Santa Victoria",idCategoria:66},
+      {id:220,name:"Vegueta",idCategoria:66},
+
+      {id:221,name:"Oyon",idCategoria:67},
+
+      // Campo 16
+      {id:222,name:"Iquitos",idCategoria:68},
+      {id:223,name:"Punchana",idCategoria:68},
+      {id:224,name:"Belen",idCategoria:68},
+      {id:225,name:"San Juan Bautista",idCategoria:68},
+
+      {id:226,name:"Yurimaguas",idCategoria:69},
+
+      // Campo 17
+      {id:227,name:"Tambopata",idCategoria:70},
+
+      // Campo 18
+      {id:228,name:"Moquegua",idCategoria:71},
+      {id:229,name:"Samegua",idCategoria:71},
+
+      {id:230,name:"Ilo",idCategoria:72},
+      {id:231,name:"Pacocha",idCategoria:72},
+
+      // Campo 19
+      {id:232,name:"Chaupimarca",idCategoria:73},
+      {id:233,name:"Simon Bolivar",idCategoria:73},
+      {id:234,name:"Yanacancha",idCategoria:73},
+
+      // Campo 20
+      {id:235,name:"Veintiseis de Octubre",idCategoria:74},
+      {id:236,name:"Piura",idCategoria:74},
+      {id:237,name:"Castilla",idCategoria:74},
+      {id:238,name:"Catacaos",idCategoria:74},
+      {id:239,name:"Cura Mori",idCategoria:74},
+      {id:240,name:"El Talllan",idCategoria:74},
+      {id:241,name:"La Arena",idCategoria:74},
+      {id:242,name:"La Union",idCategoria:74},
+      
+      {id:243,name:"Ayabaca",idCategoria:75},
+
+      {id:244,name:"Chulucanas",idCategoria:76},
+      {id:245,name:"Morropon",idCategoria:76},
+      
+      {id:246,name:"Palta",idCategoria:77},
+
+      {id:247,name:"Sullana",idCategoria:78},
+      {id:248,name:"Bellavista",idCategoria:78},
+      {id:249,name:"Marcavelica",idCategoria:78},
+      {id:250,name:"Querecotillo",idCategoria:78},
+      {id:251,name:"Salitral",idCategoria:78},
+
+      {id:252,name:"El Alto",idCategoria:79},
+
+      {id:253,name:"Sechura",idCategoria:80},
+      {id:254,name:"Bellavista de la Union",idCategoria:80},
+      {id:255,name:"Bernal",idCategoria:80},
+      {id:256,name:"Cristo Nos Valga",idCategoria:80},
+      {id:257,name:"Vice",idCategoria:80},
+      {id:258,name:"Rinconada Llicuar",idCategoria:80},
+
+      // Campo 21
+      {id:259,name:"Puno",idCategoria:81},
+
+      {id:260,name:"Azangaro",idCategoria:82},
+
+      {id:261,name:"Macusani",idCategoria:83},
+
+      {id:262,name:"Juli",idCategoria:84},
+      
+      {id:263,name:"llave",idCategoria:85},
+
+      {id:264,name:"Huancane",idCategoria:86},
+
+      {id:265,name:"Ayaviri",idCategoria:87},
+
+      {id:266,name:"Putina",idCategoria:88},
+      {id:267,name:"Ananea",idCategoria:88},
+      {id:268,name:"Sina",idCategoria:88},
+
+      {id:269,name:"Juliaca",idCategoria:89},
+
+      {id:270,name:"Sandia",idCategoria:90},
+
+      // Campo 22
+      {id:271,name:"Moyobamba",idCategoria:91},
+
+      {id:272,name:"Bellavista",idCategoria:92},
+
+      {id:273,name:"Juanjui",idCategoria:93},
+
+      {id:274,name:"Tarapoto",idCategoria:94},
+      {id:275,name:"La Banda de Shilcayo",idCategoria:94},
+      {id:276,name:"Morales",idCategoria:94},
+
+      {id:277,name:"Tocache",idCategoria:95},
+
+      // Campo 23
+      {id:278,name:"Tacna",idCategoria:96},
+      {id:279,name:"Alto de la Alianza",idCategoria:96},
+      {id:280,name:"Ciudad Nueva",idCategoria:96},
+      {id:281,name:"Pocollay",idCategoria:96},
+      {id:282,name:"Coronel Gregorio Albarracin Lanchipa",idCategoria:96},
+
+      // Campo 24
+      {id:283,name:"Tumbes",idCategoria:97},
+      {id:284,name:"Corrales",idCategoria:97},
+
+      {id:285,name:"Zarumilla",idCategoria:98},
+
+      // Campo 25
+      {id:286,name:"Calleria",idCategoria:99},
+      {id:287,name:"Campoverde",idCategoria:99},
+      {id:288,name:"Yarinacocha",idCategoria:99},
+      {id:289,name:"Manantay",idCategoria:99},
+
+      {id:290,name:"Curimana",idCategoria:100},
+
+      {id:291,name:"Purus",idCategoria:101},
+
+    ]
+
+    //creando los options de area
+    var areasSelect = document.getElementById('areas');
+    var categoriasSelect = document.getElementById('categorias');
+    var subCategoriasSelect = document.getElementById('subCategorias');
+
+    areasSelect.addEventListener("change", cargarCategorias);
+    categoriasSelect.addEventListener("change", cargarSubCategorias); 
+
+    areas.forEach(function(area){
+      let opcion = document.createElement('option')
+      opcion.value = area.id
+      opcion.text = area.name
+      areasSelect.add(opcion)
+    })
+
+    function cargarCategorias(){
+      categoriasSelect.options.length = 1;
+      subCategoriasSelect.options.length = 1;
+      categorias
+      .filter(function (categoria){
+          return categoria.idArea == this;
+      }, areasSelect.value)
+      .forEach(function(categoria){
+        let opcion = document.createElement('option')
+        opcion.value = categoria.id
+        opcion.text = categoria.name
+        categoriasSelect.add(opcion);
+      });
+    }
+
+    function cargarSubCategorias(){
+      subCategoriasSelect.options.length = 1;
+      subCategorias
+      .filter(function (subCategoria){
+          return subCategoria.idCategoria == this;
+      }, categoriasSelect.value)
+      .forEach(function(subCategoria){
+        let opcion = document.createElement('option')
+        opcion.value = subCategoria.id
+        opcion.text = subCategoria.name
+        subCategoriasSelect.add(opcion);
+      });
+    }  
+    </script>
+
+
     <script id="rocket-browser-checker-js-after">
       "use strict";
       var _createClass = (function () {
